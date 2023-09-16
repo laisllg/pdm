@@ -1,13 +1,15 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { ActivityIndicator } from 'react-native-paper';
+import { Ionicons } from '@expo/vector-icons';
+
+import Titulo from '../components/Titulo';
 
 const Splash = () => {
   return (
-    <View style={{ flex: 24, justifyContent: 'center',
-alignItems: 'center', }}>
-      <Text style={{fontSize: 24, fontWeight: 'bold', }}>Meu
-App</Text>
-      <ActivityIndicator size={'large'}/>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Ionicons name="happy-outline" size={48} />
+      <Titulo>Meu App</Titulo>
+      <ActivityIndicator size={'large'} />
     </View>
   );
 };
